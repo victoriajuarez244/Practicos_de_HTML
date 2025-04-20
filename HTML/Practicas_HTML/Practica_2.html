@@ -1,0 +1,220 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tablas de ejemplo</h1>
+
+    <h2>Tabla Básica</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Color Favorito</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Victoria</td>
+                <td>27</td>
+                <td>Córdoba</td>
+                <td>Azul</td>
+            </tr>
+            <tr>
+                <td>Lucía</td>
+                <td>25</td>
+                <td>Rosario</td>
+                <td>Verde</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>28</td>
+                <td>Mendoza</td>
+                <td>Rojo</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabla Compleja</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Producto</th>
+                <th colspan="2">Precio</th>
+                <th rowspan="2">Stock</th>
+                <th rowspan="2">Web</th>
+            </tr>
+            <tr>
+                <th>Antes</th>
+                <th>Ahora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mouse</td>
+                <td>$1000</td>
+                <td>$800</td>
+                <td>15</td>
+                <td><a href="https://www.ejemplo.com/mouse" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+                <td>Teclado</td>
+                <td>$2000</td>
+                <td>$1500</td>
+                <td>10</td>
+                <td><a href="https://www.ejemplo.com/teclado" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+                <td>Monitor</td>
+                <td>$30000</td>
+                <td>$28000</td>
+                <td>5</td>
+                <td><a href="https://www.ejemplo.com/monitor" target="_blank">Ver</a></td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>$200000</td>
+                <td>$190000</td>
+                <td>2</td>
+                <td><a href="https://www.ejemplo.com/laptop" target="_blank">Ver</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2><a href="login.html">Ir a Inicio de Sesión</a></h2>
+    <h2><a href="perfil.html">Ir al Perfil Personal</a></h2>
+
+</body>
+</html>
+
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+
+    <h1>Inicio de Sesión</h1>
+    <p>Por favor, completá los siguientes datos para acceder a tu cuenta:</p>
+
+    <form action="#" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" required><br><br>
+
+        <label>
+            <input type="checkbox" name="recordar"> Recordar mis datos
+        </label><br><br>
+
+        <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <br>
+    <a href="index.html">Volver al inicio</a>
+
+</body>
+</html>
+
+<!-- perfil.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Personal</title>
+</head>
+<body>
+
+    <h1>Mi Perfil</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="rol">Rol:</label>
+            <input type="text" id="rol" value="ESTUDIANTE" readonly><br><br>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"><br><br>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="argentina">Argentina</option>
+                <option value="chilena">Chilena</option>
+                <option value="uruguaya">Uruguaya</option>
+                <option value="otra">Otra</option>
+            </select><br><br>
+
+            <label for="trabajo">Condición laboral:</label>
+            <select id="trabajo" name="trabajo">
+                <option>Desempleado</option>
+                <option>En búsqueda laboral</option>
+                <option>Trabajo part time</option>
+                <option>Trabajo full time</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos Personales</legend>
+
+            <label for="musica">Gustos musicales:</label>
+            <input type="text" id="musica" name="musica"><br><br>
+
+            <label for="comida">Comida preferida:</label>
+            <select id="comida" name="comida">
+                <option>Pizza</option>
+                <option>Empanadas</option>
+                <option>Pastas</option>
+                <option>Ensaladas</option>
+            </select><br><br>
+
+            <label>
+                <input type="checkbox" name="recordar"> Recordar mis datos
+            </label><br><br>
+
+            <button type="submit">Guardar</button>
+        </fieldset>
+
+    </form>
+
+    <br>
+    <a href="index.html">Volver al inicio</a>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <h1>Contenido Multimedia</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Imagen</h2>
+      <img src="img/cat.jpg" alt="Un gato simpático" title="Gatito curioso" width="300">
+
+      <h2>Video</h2>
+      <video width="300" controls>
+        <source src="media/video.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="media/audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
+    </main>
+
+    <div class="right">
+      <p>Explora contenido multimedia divertido y educativo.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 - Mi sitio Web</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario de Contacto</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form>
+        <table>
+          <tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td><input type="text" id="nombre" name="nombre" required></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td><label for="edad">Edad:</label></td>
+            <td><input type="number" id="edad" name="edad"></td>
+          </tr>
+          <tr>
+            <td><label for="color">Color preferido:</label></td>
+            <td><input type="color" id="color" name="color"></td>
+          </tr>
+          <tr>
+            <td><label for="comentario">Comentario:</label></td>
+            <td><textarea id="comentario" name="comentario" minlength="10"></textarea></td>
+          </tr>
+        </table>
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+
+    <div class="right">
+      <p>Dejanos tu mensaje y pronto estaremos en contacto.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 - Mi sitio Web</p>
+  </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  nav {
+    width: 20%;
+    background-color: #ddd;
+    padding: 15px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  main {
+    width: 60%;
+    padding: 15px;
+  }
+  
+  .right {
+    width: 20%;
+    background-color: #eee;
+    padding: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #888;
+    padding: 8px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px;
+  }
+  
