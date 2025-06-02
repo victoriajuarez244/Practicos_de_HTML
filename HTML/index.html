@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel de pruebas JS</title>
+  <script src="../Javascript/validacion_de_formulario.js" defer></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 4px;
+      margin-top: 2rem;
+    }
+
+    form, section {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="color"] {
+      width: 100%;
+      padding: 0.4rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3498db;
+    }
+
+    .error {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    #parrafo {
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Panel de pruebas JavaScript</h1>
+
+  <h2>Formulario con validación básica</h2>
+  <form id="formulario">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" />
+
+    <label for="gmail">Correo Gmail:</label>
+    <input type="email" id="gmail" placeholder="ejemplo@gmail.com" />
+
+    <button type="submit">Enviar</button>
+    <p id="mensajeError" class="error"></p>
+  </form>
+
+  <h2>Mostrar u ocultar información</h2>
+  <section>
+    <button id="toggleBtn">Mostrar / Ocultar descripción</button>
+    <p id="parrafo">Este contenido se puede ocultar o mostrar según la acción del botón.</p>
+  </section>
+
+  <h2>Selector de color de fondo</h2>
+  <section>
+    <label for="colorFondo">Elegí un color para el fondo:</label>
+    <input type="color" id="colorFondo" />
+  </section>
+
+  <h2>Contador de interacciones</h2>
+  <section>
+    <button id="contadorBtn">Contar clic</button>
+    <p id="contadorTexto">Clics: 0</p>
+  </section>
+
+  <h2>Fecha y hora actual</h2>
+  <section>
+    <button id="fechaBtn">Ver fecha y hora</button>
+    <p id="fechaTexto"></p>
+  </section>
+
+</body>
+</html>
